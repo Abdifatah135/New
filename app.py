@@ -10,7 +10,7 @@ app = Flask(__name__)
  
 @app.route('/')
 def Index():
-    newsapi = NewsApiClient(api_key="456cf745d5f14cde998b96ca2399882e")
+    newsapi = NewsApiClient(api_key="6788abcbf60f48dc9cee181b96f275d3")
     topheadlines = newsapi.get_top_headlines(sources="al-jazeera-english")
  
  
@@ -40,7 +40,7 @@ def Index():
  
 @app.route('/bbc')
 def bbc():
-    newsapi = NewsApiClient(api_key="YOUR-API-KEY")
+    newsapi = NewsApiClient(api_key="6788abcbf60f48dc9cee181b96f275d3")
     topheadlines = newsapi.get_top_headlines(sources="bbc-news")
  
     articles = topheadlines['articles']
