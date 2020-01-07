@@ -58,7 +58,7 @@ def bbc():
  
     mylist = zip(news, desc, img)
  
-    return render_template('bbc.html', context=mylist)
+    return render_template('bbc.htm', context=mylist)
  
  
  
