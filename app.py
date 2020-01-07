@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from newsapi import NewsApiClient
 
 
@@ -23,3 +23,12 @@ def Index():
         news.append(myarticles['title'])
         desc.append(myarticles['description'])
         img.append(myarticles['urlToImage'])
+        
+        mylist = zip(news, desc, img)
+ 
+    return render_template('bbc.html', context=mylist)
+ 
+ 
+ 
+if __name__ == "__main__":
+    app.run(debug=True)
