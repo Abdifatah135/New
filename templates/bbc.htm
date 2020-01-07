@@ -16,4 +16,17 @@
         </h1>
      
     </div>
+
+    <div class="container">
+ 
+        {% for new, des, i in context %}
+     
+        <img src="{{i}}" alt="">
+        <h3>News: </h3> {{new}}
+        <h4>Description: </h4> {{des}}
+     
+        {% endfor %}
+     
+     
+    </div>
 </body>
